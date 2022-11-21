@@ -34,7 +34,7 @@ class LoginManual extends Component {
     const { name, emailnow, password } = this.state;
     
     console.log(emailnow, password);
-    fetch("http://localhost:3000/user/getOne/"+emailnow, {
+    fetch("http://localhost:3000/user/getOne/"+emailnow+"/"+password, {
       method: "GET",
       mode: 'cors',
       cache: 'no-cache',
